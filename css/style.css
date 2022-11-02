@@ -1,0 +1,292 @@
+@font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 400;
+     src: local(''),
+          url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'),
+          url('../fonts/open-sans-v34-latin-regular.woff') format('woff');
+}
+
+@font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 600;
+     src: local(''),
+          url('../fonts/open-sans-v34-latin-600.woff2') format('woff2'),
+          url('../fonts/open-sans-v34-latin-600.woff') format('woff');
+}
+
+@font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 700;
+     src: local(''),
+          url('../fonts/open-sans-v34-latin-700.woff2') format('woff2'),
+          url('../fonts/open-sans-v34-latin-700.woff') format('woff');
+}
+
+@font-face {
+     font-family: 'Open Sans';
+     font-style: italic;
+     font-weight: 400;
+     src: local(''),
+          url('../fonts/open-sans-v34-latin-italic.woff2') format('woff2'),
+          url('../fonts/open-sans-v34-latin-italic.woff') format('woff');
+}
+
+@font-face {
+     font-family: 'Open Sans';
+     font-style: italic;
+     font-weight: 800;
+     src: local(''),
+          url('../fonts/open-sans-v34-latin-800italic.woff2') format('woff2'),
+          url('../fonts/open-sans-v34-latin-800italic.woff') format('woff');
+}
+
+.page {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     margin: 0;
+}
+
+/* Header */
+.header-wrapper {
+     padding-top: 29px;
+     background-color: rgba(246, 242, 242, 1)
+}
+
+.header {
+     display: flex;
+     justify-content: center;
+     margin: 0 auto;
+     width: 1249px;
+     min-height: 89px;
+     background-color: rgba(0, 0, 0, 0.8)
+}
+
+.site-menu {
+     margin-left: -30px;
+}
+
+.menu-list {
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+
+.menu-list>li {
+     display: flex;
+     min-height: 89px;
+}
+
+.menu-link {
+     display: flex;
+     align-items: center;
+     padding: 0 30px;
+     font-family: 'Open Sans';
+     font-weight: 700;
+     color: rgba(224, 224, 224, 1);
+     font-size: 14px;
+     line-height: 24px;
+     text-transform: uppercase;
+     text-decoration: none;
+}
+
+.menu-link:hover {
+     background-color: rgb(255, 63, 64);
+}
+
+.active {
+     background-color: rgb(255, 63, 64);
+}
+
+/* Intro */
+
+.intro-wrapper {
+     display: block;
+     width: 100%;
+     background-color: rgba(246, 242, 242, 1);
+     padding: 102px 0 110px;
+}
+
+.intro {
+     display: flex;
+     margin: 0 auto;
+     width: 1253px;
+     justify-content: space-between;
+}
+
+.intro-heading {
+     font-family: 'Open Sans';
+     font-size: 60px;
+     line-height: 72px;
+     font-weight: 800;
+     letter-spacing: 1.5px;
+     text-transform: uppercase;
+     margin: 0;
+     margin-bottom: 19px;
+     margin-top: -15px;
+}
+
+.intro-special {
+     letter-spacing: 6px;
+}
+
+.intro-info {
+     max-width: 595px;
+}
+
+.intro-text {
+     font-family: 'Open Sans';
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 28px;
+     margin: 0;
+     margin-bottom: 58px;
+}
+
+.action-link {
+     box-sizing: border-box;
+     display: flex;
+     justify-content: center;
+     width: 227px;
+     min-height: 55px;
+     align-items: center;
+     text-decoration: none;
+     border-radius: 5px;
+     font-family: 'Open Sans';
+     font-size: 18px;
+     line-height: 34px;
+     font-weight: 700;
+     padding: 0.5em 1em;
+}
+
+.action-link_red-full {
+     background: rgb(255, 45, 45);
+     color: rgba(255, 255, 255, 1);
+}
+
+.action-link_red-transp {
+     background-color: rgba(0, 0, 0, 0);
+     color: rgba(255, 0, 0, 1);
+     border: 2px solid rgba(255, 0, 0, 1);
+
+}
+
+.intro-video {
+     width: 551px;
+     height: 356px;
+     object-fit: cover;
+     box-shadow: -2.2px -13.8px 73px rgba(0, 0, 0, 0.29);
+}
+
+/* Services */
+
+.services {
+     display: flex;
+     margin: 0 auto;
+     padding: 107px 0 90px;
+     width: 1251px;
+     justify-content: space-between;
+     border-bottom: 2px solid rgba(236, 236, 236, 1);
+}
+
+.services__info {
+     width: 539px;
+}
+
+.services__heading {
+     font-family: 'Open Sans';
+     font-size: 42px;
+     line-height: 55px;
+     font-weight: 700;
+     letter-spacing: 0.4px;
+     text-transform: uppercase;
+     margin: 0;
+     margin-bottom: 50px;
+}
+
+.services__about {
+     font-family: 'Open Sans';
+     font-size: 16px;
+     line-height: 28px;
+     font-weight: 400;
+     margin: 0;
+     margin-bottom: 64px;
+}
+
+.services__items {
+     display: flex;
+     justify-content: end;
+     flex-wrap: wrap;
+     gap: 17px;
+     width: 610px;
+}
+
+.services__item {
+     width: 280px;
+     margin-bottom: 43px;
+}
+
+.services__item_managment::before {
+     content: '';
+     display: block;
+     width: 40px;
+     height: 40px;
+     background-image: url(../img/services__item_managment.svg);
+     background-repeat: no-repeat;
+     margin: 0;
+     margin-bottom: 32px;
+}
+
+.services__item_design::before {
+     content: '';
+     display: block;
+     width: 40px;
+     height: 40px;
+     background-image: url(../img/services__item_design.svg);
+     background-repeat: no-repeat;
+     margin: 0;
+     margin-bottom: 32px;
+}
+
+.services__item_logo::before {
+     content: '';
+     display: block;
+     width: 40px;
+     height: 40px;
+     background-image: url(../img/services__item_logo_branding.svg);
+     background-repeat: no-repeat;
+     margin: 0;
+     margin-bottom: 32px;
+}
+
+.services__item_animation::before {
+     content: '';
+     display: block;
+     width: 40px;
+     height: 40px;
+     background-image: url(../img/services__item_animation.svg);
+     background-repeat: no-repeat;
+     margin: 0;
+     margin-bottom: 32px;
+}
+
+.services__tittle {
+     margin: 0;
+     margin-bottom: 13px;
+     font-family: 'Open Sans';
+     font-size: 24px;
+     font-weight: 600;
+     line-height: 1.2;
+}
+
+.services__text {
+     font-family: 'Open Sans';
+     font-size: 16px;
+     line-height: 28px;
+}
