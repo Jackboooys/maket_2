@@ -170,6 +170,10 @@
      color: rgba(255, 255, 255, 1);
 }
 
+.action-link_red-full:hover {
+     background: rgba(255, 45, 45, 0.5);
+}
+
 .action-link_red-transp {
      background-color: rgba(0, 0, 0, 0);
      color: rgba(255, 0, 0, 1);
