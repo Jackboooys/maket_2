@@ -171,11 +171,7 @@
 }
 
 .action-link_red-full:hover {
-     background: rgba(255, 45, 45, 0.5);
-}
-
-.action-link_red-full:hover {
-     background: rgba(45, 255, 237, 0.5);
+     background: rgba(188, 45, 255, 0.5);
 }
 
 
