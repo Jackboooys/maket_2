@@ -59,6 +59,7 @@
 
 /* Header */
 .header-wrapper {
+     display: block;
      padding-top: 29px;
      background-color: rgba(246, 242, 242, 1)
 }
@@ -410,7 +411,7 @@
 
 .team {
      margin: 0 auto;
-     padding: 65px 0 53px;
+     padding: 65px 0 108px;
      width: 1251px;
      align-items: left;
 }
@@ -552,4 +553,78 @@
 
 .team__other:hover>.team__other-name {
      display: block;
+}
+
+/* Subscribe */
+
+.subscribe__dark {
+     background-color: rgba(44, 44, 44, 1);
+}
+
+.subscribe {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0 auto;
+     margin-bottom: 1000px;
+     padding: 150px 0 140px;
+}
+
+.subscribe__heading {
+     font-family: 'Open Sans';
+     font-size: 42px;
+     line-height: 24px;
+     text-align: center;
+     letter-spacing: 1.05px;
+     color: rgba(255, 255, 255, 1);
+     font-weight: 700;
+     margin: 0;
+     margin-bottom: 16.5px;
+}
+
+.subscribe__text {
+     margin-bottom: 59px;
+     font-family: 'Open Sans';
+     font-size: 15.9953px;
+     line-height: 28px;
+     text-align: center;
+     color: rgba(255, 255, 255, 1);
+}
+
+.subscribe__form {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 22px;
+}
+
+.subscribe__input {
+     width: 448px;
+     height: 79px;
+     border-radius: 8px;
+     border: none;
+     font-family: 'Open Sans';
+     font-size: 16px;
+     line-height: 24px;
+     letter-spacing: 0.4px;
+     background-color: rgba(255, 255, 255, 1);
+     color: rgba(44, 44, 44, 1);
+     padding: 0 36px;
+}
+
+.subscribe__button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 214px;
+     height: 79px;
+     background-color: rgba(255, 45, 45, 1);
+     color: rgba(255, 255, 255, 1);
+     font-family: 'Open Sans';
+     font-size: 17.9026px;
+     line-height: 34px;
+     font-weight: 700;
+     letter-spacing: 0.317046px;
+     text-transform: uppercase;
+     border-radius: 8px;
+     border: none;
 }
