@@ -129,6 +129,7 @@ button {
      margin: 0 auto;
      width: 1253px;
      justify-content: space-between;
+     align-items: flex-start;
 }
 
 .intro-heading {
@@ -145,6 +146,7 @@ button {
 
 .intro-special {
      letter-spacing: 6px;
+     word-wrap: break-word;
 }
 
 .intro-info {
@@ -216,6 +218,7 @@ button {
      width: 1251px;
      justify-content: space-between;
      border-bottom: 2px solid rgba(236, 236, 236, 1);
+     align-items: flex-start;
 }
 
 .services__info {
@@ -670,6 +673,10 @@ button {
      color: rgb(0, 0, 0);
      font-family: 'Open Sans';
      font-size: 16px;
+}
+
+.feedback {
+     display: flex;
 }
 
 .feedback__name {
