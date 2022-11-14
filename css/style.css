@@ -47,6 +47,10 @@
      scroll-behavior: smooth;
 }
 
+button {
+     cursor: pointer;
+}
+
 /* Page */
 
 .page {
@@ -566,7 +570,6 @@
      flex-direction: column;
      align-items: center;
      margin: 0 auto;
-     margin-bottom: 1000px;
      padding: 150px 0 140px;
 }
 
@@ -620,11 +623,160 @@
      background-color: rgba(255, 45, 45, 1);
      color: rgba(255, 255, 255, 1);
      font-family: 'Open Sans';
-     font-size: 17.9026px;
+     font-size: 18px;
      line-height: 34px;
      font-weight: 700;
      letter-spacing: 0.317046px;
      text-transform: uppercase;
      border-radius: 8px;
      border: none;
+}
+
+/*Get in touch */
+
+
+.get-in-touch {
+     margin: 0 auto;
+     padding: 104px 0px 107px;
+     width: 1251px;
+
+}
+
+.get-in-touch__heading {
+     font-family: 'Open Sans';
+     font-size: 42px;
+     letter-spacing: 0.3834px;
+     text-transform: uppercase;
+     font-weight: 700;
+     color: rgba(0, 0, 0, 1);
+}
+
+.get-in-touch__text {
+     margin: 0;
+     margin-bottom: 58px;
+     font-family: 'Open Sans';
+     font-size: 16px;
+     color: rgba(0, 0, 0, 1);
+     width: 752px;
+}
+
+.horizontal-rule_left__feedback {
+     margin: 0;
+     margin-bottom: 74px;
+}
+
+.feedback__form > input::placeholder,
+.feedback__form > textarea::placeholder {
+     color: rgb(0, 0, 0);
+     font-family: 'Open Sans';
+     font-size: 16px;
+}
+
+.feedback__name {
+     box-sizing: border-box;
+     margin-right: 54px;
+     margin-bottom: 46px;
+     padding: 0;
+     padding-left: 54px;
+     width: 339px;
+     height: 69px;
+     font-family: 'Open Sans';
+     font-size: 16px;
+     background-color: rgba(0, 0, 0, 0.1);
+     border: none;
+     border-radius: 5px;
+     letter-spacing: 0.3px;
+     align-items: center;
+}
+
+.feedback__email {
+     box-sizing: border-box;
+     margin-bottom: 46px;
+     padding: 0;
+     padding-left: 48px;
+     width: 339px;
+     height: 69px;
+     font-family: 'Open Sans';
+     font-size: 16px;
+     background-color: rgba(0, 0, 0, 0.1);
+     border: none;
+     border-radius: 5px;
+     align-items: center;
+}
+
+.feedback__button {
+     box-sizing: border-box;
+     padding: 0;
+     width: 736px;
+     height: 72px;
+     background-color: rgb(255, 59, 59);
+     border: none;
+     border-radius: 5px;
+     color: rgb(255, 255, 255);
+     font-family: 'Open Sans';
+     font-size: 17.9026px;
+     letter-spacing: 0.3px;
+     text-transform: uppercase;
+     font-weight: 700;
+   
+}
+
+.feedback__textarea {
+     box-sizing: border-box;
+     padding: 31px 51px;
+     margin-bottom: 46px;
+     width: 736px;
+     height: 249px;
+     font-family: 'Open Sans';
+     font-size: 16px;
+     background-color: rgba(0, 0, 0, 0.1);
+     color: rgb(0, 0, 0);
+     border: none;
+     border-radius: 5px;
+     font-family: 'Open Sans';
+     font-size: 15.9134px;
+     line-height: 28px;
+     align-items: center;
+     resize: none;
+}
+
+.feedback__contacts {
+     background-color: rgba(45,45,45,1);
+     padding: 141px 17px 141px 81px;
+     color: rgb(255, 255, 255);
+     width: 315px;
+}
+
+.contacts__heading {
+     margin: 0;
+     margin-bottom: 30px;
+     font-family: 'Open Sans';
+     font-size: 18px;
+     font-weight: 700;
+     width: 315px;
+}
+
+.contacts__address {
+     margin: 0;
+     margin-bottom: 27px;
+     font-family: 'Open Sans';
+     font-size: 16px;
+     color: rgb(255, 255, 255);
+}
+
+.contacts__email {
+     display: block;
+     margin: 0;
+     margin-bottom: 20px;
+     font-family: 'Open Sans';
+     font-size: 16px;
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+}
+
+.contacts__tel {
+     display: block;
+     margin: 0;
+     text-decoration: none;
+     color: rgb(255, 255, 255);
 }
