@@ -641,6 +641,10 @@ button {
 
 }
 
+.get-in-touch__header {
+     max-width: 752px;
+}
+
 .get-in-touch__heading {
      font-family: 'Open Sans';
      font-size: 42px;
@@ -655,8 +659,8 @@ button {
      margin-bottom: 58px;
      font-family: 'Open Sans';
      font-size: 16px;
+     line-height: 1.75;
      color: rgba(0, 0, 0, 1);
-     width: 752px;
 }
 
 .horizontal-rule_left__feedback {
@@ -664,8 +668,8 @@ button {
      margin-bottom: 74px;
 }
 
-.feedback__form > input::placeholder,
-.feedback__form > textarea::placeholder {
+.feedback__form>input::placeholder,
+.feedback__form>textarea::placeholder {
      color: rgb(0, 0, 0);
      font-family: 'Open Sans';
      font-size: 16px;
@@ -673,11 +677,19 @@ button {
 
 .feedback {
      display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+.feedback__form {
+     width: 730px;
+     display: flex;
+     flex-wrap: wrap;
 }
 
 .feedback__name {
      box-sizing: border-box;
-     margin-right: 54px;
+     margin-right: 50px;
      margin-bottom: 46px;
      padding: 0;
      padding-left: 54px;
@@ -721,7 +733,7 @@ button {
      letter-spacing: 0.3px;
      text-transform: uppercase;
      font-weight: 700;
-   
+
 }
 
 .feedback__textarea {
@@ -744,7 +756,7 @@ button {
 }
 
 .feedback__contacts {
-     background-color: rgba(45,45,45,1);
+     background-color: rgba(45, 45, 45, 1);
      padding: 141px 17px 141px 81px;
      color: rgb(255, 255, 255);
      width: 315px;
@@ -757,6 +769,7 @@ button {
      font-size: 18px;
      font-weight: 700;
      width: 315px;
+     line-height: 1.75;
 }
 
 .contacts__address {
@@ -765,6 +778,7 @@ button {
      font-family: 'Open Sans';
      font-size: 16px;
      color: rgb(255, 255, 255);
+     line-height: 1.75;
 }
 
 .contacts__email {
@@ -777,9 +791,45 @@ button {
      color: rgb(255, 255, 255);
 }
 
+.contacts__email:hover {
+     text-decoration: underline;
+}
+
 .contacts__tel {
      display: block;
      margin: 0;
      text-decoration: none;
      color: rgb(255, 255, 255);
+     line-height: 1.75;
+}
+
+.contacts__tel:hover {
+     text-decoration: underline;
+}
+
+/* Footer */
+
+.footer {
+     min-height: 111px;
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto;
+     background-color: rgba(45, 45, 45, 1);
+}
+
+.footer__text {
+     box-sizing: border-box;
+     font-family: 'Open Sans';
+     font-size: 16px;
+     line-height: 26px;
+     color: rgba(184, 184, 184, 1);
+     padding: 52px 169px 33px;
+     margin: 0;
+}
+
+.footer__social {
+     margin: 0;
+     display: flex;
+     gap: 18px;
+     padding: 47px 167px 31px;
 }
