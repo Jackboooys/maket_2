@@ -118,7 +118,7 @@ button {
      line-height: 24px;
      text-transform: uppercase;
      text-decoration: none;
-     
+
 }
 
 .menu-link:hover {
@@ -148,9 +148,9 @@ button {
 }
 
 @media screen and (max-width: 1240px) {
-     .intro { 
+     .intro {
           flex-wrap: nowrap;
-     } 
+     }
 }
 
 .intro-heading {
@@ -180,9 +180,9 @@ button {
 }
 
 @media screen and (max-width: 1240px) {
-     .intro-info { 
+     .intro-info {
           width: 50%;
-     } 
+     }
 }
 
 .intro-text {
@@ -242,9 +242,9 @@ button {
 }
 
 @media screen and (max-width: 1240px) {
-     .intro-video { 
+     .intro-video {
           width: 50%;
-     } 
+     }
 }
 
 /* Services */
