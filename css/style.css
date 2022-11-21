@@ -147,7 +147,7 @@ button {
      flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1249px) {
      .intro {
           flex-wrap: nowrap;
      }
@@ -179,7 +179,7 @@ button {
      margin-right: 2vw;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1249px) {
      .intro-info {
           width: 50%;
      }
@@ -253,7 +253,7 @@ button {
      display: flex;
      margin: 0 auto;
      padding: 107px 0 90px;
-     width: 1251px;
+     width: 1249px;
      justify-content: space-between;
      border-bottom: 2px solid rgba(236, 236, 236, 1);
      align-items: flex-start;
@@ -360,7 +360,7 @@ button {
 .feature {
      margin: 0 auto;
      padding: 105px 0 65px;
-     width: 1251px;
+     width: 1249px;
 }
 
 .feature__header {
@@ -457,7 +457,7 @@ button {
 .team {
      margin: 0 auto;
      padding: 65px 0 108px;
-     width: 1251px;
+     width: 1249px;
 }
 
 .team__heading {
