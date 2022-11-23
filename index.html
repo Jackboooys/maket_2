@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="JS/script.js"></script>
 </head>
 
 <body class="page">
@@ -22,7 +23,16 @@
                     <li><a class="menu-link active" href="#">Home</a></li>
                     <li><a class="menu-link" href="#feature">Portfolio</a></li>
                     <li><a class="menu-link" href="#team">About us</a></li>
-                    <li><a class="menu-link" href="#subscribe">Contact</a></li>
+                    <li><a class="menu-link" href="#feedback">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="popup-menu">
+                <button class="popup-menu__button"></button>
+                <ul class="popup-menu_list hide">
+                    <li><a class="popup-menu_link" href="#">Home</a></li>
+                    <li><a class="popup-menu_link" href="#feature">Portfolio</a></li>
+                    <li><a class="popup-menu_link" href="#team">About us</a></li>
+                    <li><a class="popup-menu_link" href="#feedback">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -154,12 +164,12 @@
                 </div>
             </div>
         </section>
-        <div class="header-wrapper subscribe__dark">
-            <section class="subscribe" id="subscribe">
+        <div class="header-wrapper page__inner_subscribe subscribe__dark">
+            <section class="subscribe">
                 <h2 class="subscribe__heading">Design tips, tricks, and freebies. Delivered weekly.</h2>
                 <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
                 <form class="subscribe__form" method="get">
-                    <input class="subscribe__input" type="email" name="email" id="subscribe__email"
+                    <input required class="subscribe__input" type="email" name="email" id="subscribe__email"
                         placeholder="Email Address...">
                     <button class="subscribe__button" type="submit">subscribe</button>
                 </form>
@@ -179,8 +189,8 @@
             <div class="feedback__body">
                 <div class="feedback__box feedback__box_left"></div>
                 <form class="feedback__form">
-                    <input class="feedback__name" type="text" placeholder="Name" name="Name">
-                    <input class="feedback__email" type="email" placeholder="Your Mail" name="Mail">
+                    <input required class="feedback__name" type="text" placeholder="Name" name="Name">
+                    <input required class="feedback__email" type="email" placeholder="Your Mail" name="Mail">
                     <textarea class="feedback__textarea" name="text" id="textarea" cols="30" rows="10"
                         placeholder="Type your message"></textarea>
                     <button class="feedback__button" type="submit">Send message</button>
