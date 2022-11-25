@@ -235,7 +235,7 @@ button {
      align-items: flex-start;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
 .intro-wrapper {
     flex-wrap: wrap;
 }
@@ -269,13 +269,8 @@ button {
 .intro-heading {
     font-size: 50px;
 }
- }
+}
 
- @media screen and (max-width: 1249px) {
-.intro-heading {
-    font-size: 5vw;
-}
-}
 
 .intro__span_special {
      overflow-wrap: break-word;
@@ -551,7 +546,7 @@ button {
      gap: 57px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 933px) {
      .feature__list {
           justify-content: center;
           flex-wrap: wrap;
@@ -622,7 +617,7 @@ button {
      line-height: 1.2;
      color: rgba(0, 0, 0, 1);
      font-weight: 700;
-     letter-spacing: 0.3834px;
+     letter-spacing: 0.38px;
      text-transform: uppercase;
 }
 
@@ -635,7 +630,7 @@ button {
      margin: 0;
      margin-bottom: 38px;
      font-family: 'Open Sans';
-     font-size: 15.9953px;
+     font-size: 16px;
      line-height: 28px;
      max-width: 450px;
 }
@@ -646,19 +641,25 @@ button {
      grid-template-columns: repeat(2, auto);
      grid-template-rows: repeat(2, auto);
      justify-content: space-between;
-     align-items: end;
      column-gap: 2vw;
-     justify-items: center;
 }
 
 .team__lead-photo {
+     object-position: bottom;
+     object-fit: contain;
+     grid-column: 1 / 2;
      grid-row: 1 / 3;
 }
 
 .team__inner {
-     display: grid;
-     grid-row: 1 / 3;
-     grid-column: 2 / 3;
+     display: flex;
+     flex-direction: column;
+}
+
+@supports (display: contents) {
+     .team__inner {
+          display: contents;
+     }
 }
 
 @supports (grid-template-columns: subgrid) {
@@ -668,6 +669,7 @@ button {
           grid-template-rows: subgrid;
           grid-column: 2 / 3;
           grid-row: 1 / 3;
+          align-items: flex-end;
      }
 }
 
@@ -675,6 +677,7 @@ button {
      max-width: 630px;
      grid-column: 2 / 3;
      grid-row: 1 / 2;
+     align-self: center;
 }
 
 .team__lead-name {
@@ -706,6 +709,13 @@ button {
      margin: 0;
      margin-bottom: 60px;
      gap: 34px;
+}
+
+@media screen and (max-width: 800px) {
+     .team__lead-social {
+          align-items: center;
+          justify-content: center;
+     }
 }
 
 .team__lead-link {
@@ -767,7 +777,6 @@ button {
      .team__members {
           grid-template-columns: auto;
           grid-template-rows: auto;
-          justify-items: center;
           row-gap: 1em;
      }
      .team__lead-photo {
@@ -790,6 +799,10 @@ button {
      background-color: rgba(44, 44, 44, 1);
 }
 
+.page__inner_subscribe {
+     padding: 0 1vw;
+}
+
 .subscribe {
      display: flex;
      flex-direction: column;
@@ -797,18 +810,30 @@ button {
      margin: 0 auto;
      padding: 150px 0 140px;
 }
+@media screen and (max-width: 800px) {
+     .subscribe {
+          flex-wrap: wrap;
+     }
+}
 
 .subscribe__heading {
      font-family: 'Open Sans';
      font-size: 42px;
-     line-height: 24px;
      text-align: center;
      letter-spacing: 1.05px;
      color: rgba(255, 255, 255, 1);
      font-weight: 700;
-     margin: 0;
      margin-bottom: 16.5px;
+     max-width: 1249px;
+     margin: 0 auto;
+
 }
+ 
+@media screen and (max-width: 650px) {
+     .subscribe__heading {
+         font-size: 30px;
+     }
+     }
 
 .subscribe__text {
      margin-bottom: 59px;
@@ -823,6 +848,7 @@ button {
      display: flex;
      flex-wrap: wrap;
      gap: 22px;
+     justify-content: center;
 }
 
 .subscribe__input {
@@ -837,6 +863,12 @@ button {
      background-color: rgba(255, 255, 255, 1);
      color: rgba(44, 44, 44, 1);
      padding: 0 36px;
+}
+
+@media screen and (max-width:800px) {
+     .subscribe__input  {
+          width: 100%;
+     }
 }
 
 .subscribe__button {
@@ -862,9 +894,10 @@ button {
 
 .feedback {
      margin: 0 auto;
-     padding: 104px 0px 107px;
      max-width: 100%;
-
+     padding: 0 1vw;
+     padding-top: 104px;
+     padding-bottom: 107px;
 }
 
 .feedback__header {
@@ -929,6 +962,13 @@ button {
      margin-right: 107px;
 }
 
+@media screen and (max-width:800px) {
+     .feedback__form {
+          width: 100%;
+          margin-bottom: 20px;
+     }
+}
+
 .feedback__name {
      box-sizing: border-box;
      margin-right: 50px;
@@ -975,13 +1015,18 @@ button {
      letter-spacing: 0.3px;
      text-transform: uppercase;
      font-weight: 700;
+}
 
+@media screen and (max-width:1292px) {
+     .feedback__button {
+          margin-bottom: 20px;
+     }
 }
 
 .feedback__textarea {
      box-sizing: border-box;
      padding: 31px 51px;
-     margin-bottom: 46px;
+     margin-bottom: 60px;
      width: 736px;
      height: 249px;
      font-family: 'Open Sans';
@@ -997,11 +1042,23 @@ button {
      resize: none;
 }
 
+@media screen and (max-width:800px) {
+     .feedback__textarea {
+          margin-bottom: 10px;
+     }
+}
 .feedback__contacts {
      background-color: rgba(45, 45, 45, 1);
      padding: 141px 17px 141px 81px;
      color: rgb(255, 255, 255);
      width: 315px;
+}
+
+@media screen and (max-width:800px) {
+     .feedback__contacts {
+          width: 200px;
+          flex-wrap: wrap;
+     }
 }
 
 .contacts__heading {
@@ -1010,7 +1067,7 @@ button {
      font-family: 'Open Sans';
      font-size: 18px;
      font-weight: 700;
-     width: 315px;
+     max-width: 315px;
      line-height: 1.75;
 }
 
@@ -1021,6 +1078,12 @@ button {
      font-size: 16px;
      color: rgb(255, 255, 255);
      line-height: 1.75;
+}
+
+@media screen and (max-width:800px) {
+     .contacts__address {
+          flex-wrap: wrap;
+     }
 }
 
 .contacts__email {
@@ -1052,11 +1115,21 @@ button {
 /* Footer */
 
 .footer {
-     min-height: 111px;
      display: flex;
-     justify-content: space-between;
      margin: 0 auto;
+     padding: 0 1vw;
+     padding-right: 167px;
+     min-height: 111px;
+     justify-content: space-between;
+     align-items: center;
      background-color: rgba(45, 45, 45, 1);
+}
+
+@media screen and (max-width:800px) {
+     .footer {
+     padding: 0;
+     padding-right: 0;
+     }
 }
 
 .footer__text {
@@ -1065,15 +1138,39 @@ button {
      font-size: 16px;
      line-height: 26px;
      color: rgba(184, 184, 184, 1);
-     padding: 52px 169px 33px;
      margin: 0;
+     padding-left: 169px;
+}
+
+@media screen and (max-width:800px) {
+     .footer__text {
+     padding: 0;
+     padding-right: 0;
+     }
 }
 
 .footer__social {
      margin: 0;
      display: flex;
      gap: 18px;
-     padding: 47px 167px 31px;
+}
+
+@media screen and (max-width: 800px) {
+     .footer__social {
+          flex-wrap: wrap;
+     }
+}
+
+.social {
+     display: flex;
+     gap: 18px;
+}
+
+@media screen and (max-width: 800px) {
+     .social {
+          flex-wrap: wrap;
+          align-items: center;
+     }
 }
 
 /* JS */
