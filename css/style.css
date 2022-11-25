@@ -373,6 +373,7 @@ button {
      .services {
           justify-content: center;
           flex-wrap: wrap;
+          padding-bottom: 0;
      }
 }
 
@@ -550,6 +551,7 @@ button {
      .feature__list {
           justify-content: center;
           flex-wrap: wrap;
+          align-items: center;
      }
 }
 
@@ -557,6 +559,7 @@ button {
      .feature__list {
           justify-content: center;
           flex-direction: column;
+          gap: 10px;
      }
 }
 
@@ -597,6 +600,11 @@ button {
      object-fit: cover;
      object-position: 0% 50%;
      flex: 1 1;
+}
+
+.feature__product:hover {
+     transform: scale(1.2, 1.1);
+     transition: transform 0.8s ease-in-out;
 }
 
 /* Team */
