@@ -688,6 +688,13 @@ img.feature__product:hover {
      align-self: center;
 }
 
+
+@media screen and (max-width:1251px) {
+     .team__lead-main {
+          grid-column: 1 / 3;
+     }
+}
+
 .team__lead-name {
      display: block;
      font-family: 'Open Sans';
@@ -899,6 +906,10 @@ img.feature__product:hover {
      text-transform: uppercase;
      border-radius: 8px;
      border: none;
+}
+
+.subscribe__button:hover {
+transform: scale(1.1);
 }
 
 /*Get in touch */
@@ -1178,6 +1189,10 @@ img.feature__product:hover {
      margin: 0;
      display: flex;
      gap: 18px;
+}
+
+.link__logo:hover {
+          transform: scale(1.1);
 }
 
 @media screen and (max-width: 800px) {
