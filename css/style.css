@@ -294,6 +294,12 @@ button {
      margin-bottom: 20px;
 }
 
+@media screen and (max-width:800px) {
+     .intro-info {
+          margin-top: 20px;
+     }
+}
+
 .intro-text {
      font-family: 'Open Sans';
      font-weight: 400;
