@@ -689,7 +689,7 @@ img.feature__product:hover {
 }
 
 
-@media screen and (max-width:1251px) {
+@media screen and (max-width:1233px) {
      .team__lead-main {
           grid-column: 1 / 3;
      }
