@@ -59,6 +59,12 @@ button {
      align-items: center;
 }
 
+@media screen and (min-width: 801px) {
+     .popup-menu {
+          display: none;
+     }
+}
+
 .popup-menu__button {
      display: block;
      width: 220px;
@@ -118,11 +124,6 @@ button {
      background-color: rgb(255, 63, 64);
 }
 
-@media screen and (min-width: 800px) {
-     .popup-menu {
-          display: none;
-     }
-}
 
 /* Page */
 
@@ -170,7 +171,7 @@ button {
      margin-left: -30px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width:800px) {
      .site-menu {
           margin-left: initial;
      }
