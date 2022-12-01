@@ -922,6 +922,7 @@ img.feature__product:hover {
      text-transform: uppercase;
      border-radius: 8px;
      border: none;
+     word-break: break-all;
 }
 
 .subscribe__button:hover {
@@ -1065,6 +1066,7 @@ transform: scale(1.1);
      font-size: 17.9026px;
      letter-spacing: 0.3px;
      text-transform: uppercase;
+     word-break: break-all;
      font-weight: 700;
 }
 
