@@ -1118,6 +1118,7 @@ transform: scale(1.1);
      font-weight: 700;
      max-width: 315px;
      line-height: 1.75;
+     text-transform: uppercase;
 }
 
 .contacts__address {
@@ -1127,6 +1128,7 @@ transform: scale(1.1);
      font-size: 16px;
      color: rgb(255, 255, 255);
      line-height: 1.75;
+     font-style: normal;
 }
 
 @media screen and (max-width:800px) {
