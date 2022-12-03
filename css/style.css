@@ -68,7 +68,7 @@ button {
 .popup-menu__button {
      display: block;
      width: 220px;
-     height: 80px;
+     min-height: 80px;
      background-image: url(../img/menu-button.svg);
      background-repeat: no-repeat;
      background-position: center;
@@ -906,7 +906,7 @@ button {
      justify-content: center;
      align-items: center;
      width: 214px;
-     height: 79px;
+     min-height: 79px;
      background-color: rgba(255, 45, 45, 1);
      color: rgba(255, 255, 255, 1);
      font-family: 'Open Sans';
@@ -1001,6 +1001,7 @@ transform: scale(1.1);
      display: flex;
      flex-wrap: wrap;
      margin-right: 107px;
+     align-content: flex-start;
 }
 
 @media screen and (max-width:800px) {
@@ -1052,7 +1053,7 @@ transform: scale(1.1);
      box-sizing: border-box;
      padding: 0;
      width: 736px;
-     height: 72px;
+     min-height: 72px;
      background-color: rgb(255, 59, 59);
      border: none;
      border-radius: 5px;
@@ -1169,12 +1170,12 @@ transform: scale(1.1);
      display: flex;
      margin: 0 auto;
      padding: 0 1vw;
-     padding-right: 167px;
      min-height: 111px;
      justify-content: space-between;
      align-items: center;
      background-color: rgba(45, 45, 45, 1);
      box-sizing: border-box;
+     max-width: 1249px;
 }
 
 @media screen and (max-width:800px) {
@@ -1191,7 +1192,7 @@ transform: scale(1.1);
      line-height: 26px;
      color: rgba(184, 184, 184, 1);
      margin: 0;
-     padding-left: 169px;
+     padding-top: 48px;
 }
 
 @media screen and (max-width:800px) {
@@ -1220,6 +1221,7 @@ transform: scale(1.1);
 .social {
      display: flex;
      gap: 18px;
+     padding-top: 25px;
 }
 
 @media screen and (max-width: 800px) {
